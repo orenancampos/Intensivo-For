@@ -1,0 +1,24 @@
+<meta charset="UTF-8">
+<script>
+    //Problema:
+    /*
+    Considere a seguinte lista de itens:
+    let lista = ['arara', 'para', 'radar', 'tomate', 'osso', 'ana', 'casa', 'ovo'];
+    Verifique quais itens da  lista são palíndromos e retorne a lista com os palíndromos encontrados. Os demais devem ser desconsiderados.
+    */
+
+    //ENTRADA
+    let listaUM = ['arara', 'para', 'radar', 'tomate', 'osso', 'ana', 'casa', 'ovo'];
+    let palindromos = []
+    //A var palindromos vai armazenar o resultado final, deve ser  apresntada na saída do código 
+
+    for (let palavra of listaUM) {
+        if (palavra.split("").reverse().join("") == palavra) {
+            palindromos.push(palavra);
+        }
+    }
+    document.write(`Palíndromos encontrados: ${palindromos.join(", ")}`);
+
+</script>
+
+

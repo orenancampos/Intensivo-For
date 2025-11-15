@@ -1,0 +1,26 @@
+<meta charset="UTF-8">
+<script>
+/*
+PROBLEMA: 
+Dado o array: 
+const palavras = ["programação", "é", "incrível"];
+Peça ao usuário um separador (ex.: " - " ou " | ").
+Usando for...of, crie uma única string unindo todas as palavras com o separador informado.
+Exiba a string final (ex.: "programação - é - incrível").
+*/
+
+//ENTRADA
+let palavras = ["programação", "é", "incrível"];
+let separador = prompt(`informe um separador (ex.: " - " ou " | ").`);
+let concatenacao = [];
+
+//PROCESSAMENTO
+for (let palavra of palavras) {
+palavras.join(separador);
+}
+
+//SAÍDA
+concatenacao = palavras.join(separador);
+alert(concatenacao);
+
+</script>

@@ -1,0 +1,33 @@
+</script>
+<meta charset="UTF-8">
+<script>
+/*
+PROBLEMA:
+Dado o array:
+const notas = [7.5, 8.0, 9.5, 6.0, 8.5];
+Peça ao usuário para adicionar uma nova nota.
+Usando for...of, encontre a maior e a menor nota do array atualizado.
+Calcule a média excluindo a maior e a menor nota.
+Exiba a média final com duas casas decimais.
+*/
+
+//ENTRADA
+let notas = [7.5, 8.0, 9.5, 6.0, 8.5];
+novaNota = Number(prompt(`informe uma nova nota`));
+
+//PROCESSAMENTO
+
+notas.push(novaNota);
+notas.sort((a, b) => a - b);
+notas.pop();
+notas.shift();
+let valor = 0;
+for (let nota of notas) {
+valor = valor + nota;
+}
+media = valor / notas.length;
+
+//SAÍDA
+document.write(media);
+
+</script>

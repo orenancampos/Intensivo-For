@@ -1,0 +1,48 @@
+5) Contador de Palavras Palindrômicas
+*
+<meta charset="UTF-8">
+<script>
+/*
+PROBLEMA:
+Dado o array:
+const palavras = ["ama", "arara", "casa", "radar", "sol", "nível"];
+Usando for...of, conte quantas palavras são palíndromos (leem-se igual de trás para frente, sem diferenciar maiúsculas/minúsculas).
+Exiba a contagem de palíndromos.
+*/
+
+//ENTRADA
+
+
+//PROCESSAMENTO
+
+
+//SAÍDA
+
+</script>
+<meta charset="UTF-8">
+<script>
+/*
+PROBLEMA:
+Dado o array:
+const palavras = ["ama", "arara", "casa", "radar", "sol", "nível"];
+Usando for...of, conte quantas palavras são palíndromos (leem-se igual de trás para frente, sem diferenciar maiúsculas/minúsculas).
+Exiba a contagem de palíndromos.
+*/
+
+//ENTRADA
+let palavras = ["ama", "arara", "casa", "radar", "sol", "nível"];
+let palindromos = [];
+
+//PROCESSAMENTO
+for (let palavra of palavras) {
+ if (Array.from(palavra).reverse().join("") == palavra) { 
+    palindromos.push(palavra);
+}
+else {
+    null
+}
+}
+//SAÍDA
+document.write(palindromos.length);
+
+</script>
